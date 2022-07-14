@@ -2,7 +2,6 @@
 #include<string>
 #include<time.h>
 using namespace std;
-
 extern "C"
 {
 	const char* ls_time_clock()
