@@ -6,6 +6,7 @@ typedef   signed int        int32;
 typedef unsigned int       uint32;
 typedef   signed long long  int64;
 typedef unsigned long long uint64;
+
 typedef struct { char *data; int64 len; int64 size; } lsSTRING;
 typedef int8 boolean;
 #define ls_D2I( value ) ((int32)__builtin_nearbyint( value ))
