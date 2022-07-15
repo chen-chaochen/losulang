@@ -11,7 +11,7 @@ int main(int argc,const char** argv)
         main_argv = argv;
         if (command() == "")
         {
-            throw "ÂåÊéººÓï±à³Ì\nLosu 0.1\n(c) Chen-chaochen\nMaked by GNU C++\nStd = IOS14\nLicense GPL-3.0\n";
+            throw "æ´›ä¹¦æ±‰è¯­ç¼–ç¨‹\nLosu 0.1\n(c) Chen-chaochen\nMaked by GNU C++\nStd = IOS14\nLicense GPL-3.0\n";
         }
         mainfile = curdir() + command() + ".lsc";
         ls_vm vim;
