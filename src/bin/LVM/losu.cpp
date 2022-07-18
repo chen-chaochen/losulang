@@ -12,7 +12,7 @@ int main(int argc,const char** argv)
         ls_vm vim;
         if (command() == "")
         {
-            throw "ÂåÊéººÓï±à³Ì\nLosu 0.1\n(c) Chen-chaochen\nMaked by GNU C++\nLicense GPL-3.0\n";
+            throw "æ´›ä¹¦æ±‰è¯­ç¼–ç¨‹\nLosu 0.1\n(c) Chen-chaochen\nMaked by GNU C++\nLicense GPL-3.0\n";
         }
         mainfile = curdir() + command() + ".lsc";
         array_start();
