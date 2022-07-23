@@ -1,0 +1,50 @@
+csip 开始
+<开始>
+开始· 
+ push
+请输入一个人名>
+api =  mov 标准流·输出·字符  
+add 标准流·输出·字符 lvm io ls_io_cout 
+clear 标准流·输出·字符 
+ mov 标准流·输入·  
+lvm io ls_io_cin mov 标准流·输入 
+ add 标准流·输入 api =  mov 开始·人名 
+ push
+4
+api = loop 开始·0
+<loop.开始·0>
+ push
+你好，
+api =  add 开始·人名 api &  push
+\n
+api &  mov 标准流·输出·字符  
+add 标准流·输出·字符 lvm io ls_io_cout 
+clear 标准流·输出·字符 
+</loop.开始·0>
+ push
+请输入一个人名>
+api =  mov 标准流·输出·字符  
+add 标准流·输出·字符 lvm io ls_io_cout 
+clear 标准流·输出·字符 
+ mov 标准流·输入·  
+lvm io ls_io_cin mov 标准流·输入 
+ add 标准流·输入 api =  mov 开始·人名 
+ push
+请输入循环次数>
+api =  mov 标准流·输出·字符  
+add 标准流·输出·字符 lvm io ls_io_cout 
+clear 标准流·输出·字符 
+ mov 标准流·输入·  
+lvm io ls_io_cin mov 标准流·输入 
+ add 标准流·输入 api =  mov 开始·次数 
+ add 开始·次数 api = loop 开始·1
+<loop.开始·1>
+ push
+你好，
+api =  add 开始·人名 api &  push
+\n
+api &  mov 标准流·输出·字符  
+add 标准流·输出·字符 lvm io ls_io_cout 
+clear 标准流·输出·字符 
+</loop.开始·1>
+</开始>

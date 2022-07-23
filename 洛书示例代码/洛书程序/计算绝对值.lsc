@@ -1,0 +1,32 @@
+csip 开始
+<开始>
+开始· 
+ push
+输入一个数>
+api =  mov 标准流·输出·字符  
+add 标准流·输出·字符 lvm io ls_io_cout 
+clear 标准流·输出·字符 
+ mov 标准流·输入·  
+lvm io ls_io_cin mov 标准流·输入 
+ add 标准流·输入 api =  mov 开始·数1 
+ push
+0
+api =  add 开始·数1 api +  mov 开始·数1 
+ add 开始·数1 api =  mov logic1 pop  push
+0
+api =  mov logic2 pop add logic1 push
+<
+add logic2 logic 开始·0
+<logic.开始·0>
+ push
+0
+api =  add 开始·数1 api -  mov 开始·数1 
+</logic.开始·0>
+ push
+它的绝对值是>
+api =  add 开始·数1 api &  push
+\n
+api &  mov 标准流·输出·字符  
+add 标准流·输出·字符 lvm io ls_io_cout 
+clear 标准流·输出·字符 
+</开始>
