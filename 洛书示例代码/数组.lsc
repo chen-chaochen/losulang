@@ -1,0 +1,53 @@
+csip 开始
+<开始>
+开始· 
+ push
+数组1
+api =  mov 开始·数组名 
+ push
+数组1
+api =  mov 数组·新数组·数组名  
+add 数组·新数组·数组名 api array.newarry 
+clear 数组·新数组·数组名 
+ push
+数组1
+api =  mov 数组·设定·数组名  push
+1
+api =  mov 数组·设定·位置  push
+你好，洛书\n
+api =  mov 数组·设定·值  
+add 数组·设定·数组名 add 数组·设定·位置 add 数组·设定·值 api array.setarry 
+clear 数组·设定·数组名 
+clear 数组·设定·位置 
+clear 数组·设定·值 
+ push
+数组1
+api =  mov 数组·设定·数组名  push
+2
+api =  mov 数组·设定·位置  push
+洛书编程语言\n
+api =  mov 数组·设定·值  
+add 数组·设定·数组名 add 数组·设定·位置 add 数组·设定·值 api array.setarry 
+clear 数组·设定·数组名 
+clear 数组·设定·位置 
+clear 数组·设定·值 
+ push
+数组1
+api =  mov 数组·获取·数组名  push
+1
+api =  mov 数组·获取·位置  
+add 数组·获取·数组名 add 数组·获取·位置 api array.getarry mov 数组·获取 
+clear 数组·获取·数组名 
+clear 数组·获取·位置 
+ add 数组·获取 api =  mov 开始·变量 
+ add 开始·数组名 api =  mov 数组·获取·数组名  push
+2
+api =  mov 数组·获取·位置  
+add 数组·获取·数组名 add 数组·获取·位置 api array.getarry mov 数组·获取 
+clear 数组·获取·数组名 
+clear 数组·获取·位置 
+ add 开始·变量 api =  add 数组·获取 api &  mov 开始·变量 
+ add 开始·变量 api =  mov 标准流·输出·字符  
+add 标准流·输出·字符 lvm io ls_io_cout 
+clear 标准流·输出·字符 
+</开始>
