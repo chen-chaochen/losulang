@@ -1,0 +1,30 @@
+csip 开始
+<开始>
+开始· 
+ push
+1
+api =  mov 开始·第一项 
+ push
+1
+api =  mov 开始·第二项 
+ add 开始·第一项 api =  push
+\n
+api &  add 开始·第二项 api &  push
+\n
+api &  mov 标准流·输出·字符  
+add 标准流·输出·字符 lvm io ls_io_cout 
+clear 标准流·输出·字符 
+ push
+38
+api = loop 开始·0
+<loop.开始·0>
+ add 开始·第一项 api =  add 开始·第二项 api +  mov 开始·第三项 
+ add 开始·第三项 api =  push
+\n
+api &  mov 标准流·输出·字符  
+add 标准流·输出·字符 lvm io ls_io_cout 
+clear 标准流·输出·字符 
+ add 开始·第二项 api =  mov 开始·第一项 
+ add 开始·第三项 api =  mov 开始·第二项 
+</loop.开始·0>
+</开始>
