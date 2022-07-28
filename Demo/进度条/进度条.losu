@@ -1,0 +1,17 @@
++类 进度条
+{
+    +方法 启动(大小)
+    {
+        +指令
+        {
+            add [此类]·启动·大小 lei ./bar.lsd ls_bar_start
+        }
+    }
+    +方法 推进()
+    {
+        +指令
+        {
+            lei ./bar.lsd ls_bar_next
+        }
+    }
+}
