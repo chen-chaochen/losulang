@@ -20,8 +20,24 @@ QQ交流群 805995065
 + losu   VM解释器
 + losuc 编译器
 + lpt 洛书包管理器
-### 安装,使用
-见各发行版的文档
+### 安装&更新
+洛书采用类似镜像源的安装方式，通过一行命令，即可快速安装,更新洛书的最新版本
++ windows
+
+```
+wget https://gitee.com/chen-chaochen/lpk/raw/release/update/install.bat&install.bat
+```
+
++ linux
+
+```
+wget https://gitee.com/chen-chaochen/lpk/raw/release/update/install.sh&&sudo bash ./install.sh
+```
+
+
+
+
+
 ### 加入洛书
 1. 加入仓库,参与洛书标准的制定及LPK组件的开发
 2. 在expand分支提交pr，参与洛书拓展库的开发
