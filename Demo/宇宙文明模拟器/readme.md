@@ -9,12 +9,12 @@
 + linux 
 
 ```
-wget https://gitee.com/chen-chaochen/lpk/raw/expand/Demo/src_linux.tar
+wget https://gitee.com/chen-chaochen/lpk/raw/expand/Demo/宇宙文明模拟器/src_linux.tar
 ```
 + windows
 
 ```
-https://gitee.com/chen-chaochen/lpk/raw/expand/Demo/src_windows.zip
+https://gitee.com/chen-chaochen/lpk/raw/expand/Demo/宇宙文明模拟器/src_windows.zip
 ```
 解压压缩包<br>
 2. 编译
