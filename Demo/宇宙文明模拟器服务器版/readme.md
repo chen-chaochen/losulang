@@ -20,7 +20,7 @@ wget https://gitee.com/chen-chaochen/lpk/raw/expand/Demo/宇宙文明模拟器�
 
 ```
 losuc 模拟器
-losuc 终端
+losuc 服务器
 ```
 3. 运行
 + 在工作目录(移植的话一定保证工作目录下有文明库目录)一个终端中输入
