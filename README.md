@@ -35,8 +35,17 @@ wget https://gitee.com/chen-chaochen/lpk/raw/release/update/install.sh&&sudo bas
 ```
 
 
+### Demo
+#### [1. 井字棋](https://gitee.com/chen-chaochen/lpk/tree/expand/Demo/%E4%BA%95%E5%AD%97%E6%A3%8B%E6%B8%B8%E6%88%8F)
+![井字棋](https://gitee.com/chen-chaochen/lpk/raw/expand/Demo/%E4%BA%95%E5%AD%97%E6%A3%8B%E6%B8%B8%E6%88%8F/%E8%BF%90%E8%A1%8C%E6%88%AA%E5%9B%BE.png)
 
+#### [2. 宇宙文明模拟器](https://gitee.com/chen-chaochen/lpk/tree/expand/Demo/%E5%AE%87%E5%AE%99%E6%96%87%E6%98%8E%E6%A8%A1%E6%8B%9F%E5%99%A8)
+![模拟器](https://gitee.com/chen-chaochen/lpk/raw/expand/Demo/%E5%AE%87%E5%AE%99%E6%96%87%E6%98%8E%E6%A8%A1%E6%8B%9F%E5%99%A8/运行截图.png)
+![终端](https://gitee.com/chen-chaochen/lpk/raw/expand/Demo/%E5%AE%87%E5%AE%99%E6%96%87%E6%98%8E%E6%A8%A1%E6%8B%9F%E5%99%A8/运行截图2.png)
 
+#### [3. 洛书服务器](https://gitee.com/chen-chaochen/lpk/tree/expand/%E6%B4%9B%E4%B9%A6%E6%9C%8D%E5%8A%A1%E5%99%A8)
+![服务器服务端](Demo/%E6%9C%8D%E5%8A%A1%E5%99%A8.png)
+![服务器客户端](Demo/%E6%9C%8D%E5%8A%A1%E5%99%A82.png)
 
 ### 加入洛书
 1. 加入仓库,参与洛书标准的制定及LPK组件的开发
