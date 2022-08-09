@@ -39,7 +39,7 @@ wget https://gitee.com/chen-chaochen/lpk/raw/release/update/install.sh&&sudo bas
 
 
 ### Demo
-#### [1. 嵌入式编程]()
+#### [1. 嵌入式编程](https://gitee.com/chen-chaochen/lpk/tree/expand/Demo/%E7%89%A9%E8%81%94%E7%BD%91-%E6%99%BA%E8%83%BD%E5%AE%B6%E5%B1%85%E9%9B%8F%E5%BD%A2)
 
 ```
 //文件 ./cgi-bin/洛书的家.losu
