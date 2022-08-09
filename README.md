@@ -1,23 +1,49 @@
+<a href='https://gitee.com/chen-chaochen/lpk/stargazers'><img src='https://gitee.com/chen-chaochen/lpk/badge/star.svg?theme=dark' alt='star'></img></a>
+<a href='https://gitee.com/chen-chaochen/lpk/members'><img src='https://gitee.com/chen-chaochen/lpk/badge/fork.svg?theme=dark' alt='fork'></img></a><a href='https://gitee.com/chen-chaochen/lpk'><img src='https://gitee.com/chen-chaochen/lpk/widgets/widget_1.svg' alt='Fork me on Gitee'></img></a>
 # 洛书重启
 ### 重启
 移除原有的代码及发行版,放弃原有软件架构，更换了新的开源许可证<br>
 QQ交流群 805995065<br>
-Demo 见expand分支
-文档 见wiki与doc分支
+Demo 见expand分支<br>
+文档 见wiki与doc分支<br>
+### 更新规划
+开发者还在大学学习<br>
+洛书将在 寒暑假期间保持快速更新状态<br> 
+学期期间将保持维护状态，可以提pr,issues,开发者将择期回复<br>
+洛书的0.*版本皆为滚动更新版本<br>
+在添加了较重要的新功能时会发布新的版本<br>
+而更新与修订会直接推送到release镜像
+洛书1.0将是第一个LTS版本。
 
 ### 定位
-+ 自主设计，中文编程    洛书源代码 ——> 洛书指令 ——> 洛书程序
-+ 跨平台支持    兼容主流操作系统
-+ 开放透明    C++实现，源码，架构及工作原理完全开放
-+ 简单高效    语法简捷，"胶水语言"，支持调用标准C/C++等函数库
-+ 多用途      编程入门，自动化脚本，网络编程，物联网设备，嵌入式编程
-+ 语法糖架构    所有的编译器与前端都是在 洛书指令语言 基础上进行加糖，通过加糖，可以构建不同语法的洛书语言
++ 自主设计，中文编程
+    + 洛书源代码 ——> 洛书指令 ——> 洛书程序
++ 跨平台支持    
+    + 兼容主流操作系统，Windows,CentOS,Ubuntu……
+    + 支持麒麟，深度，欧拉等国产系统。
+    + 兼容多种处理器架构
++ 开放透明    
+    + C++实现，源码，架构及工作原理完全开放。
+    + 编译生成可阅读的输出文件，自由查看
++ 简单高效    
+    + 语法简捷，中文代码
+    + "胶水语言"，支持调用标准C/C++等函数库,可与现有编程语言进行交互
++ 多用途      
+    + 编程入门
+    + 自动化脚本
+    + 网络编程
+    + 物联网设备
+    + 嵌入式编程
++ 语法糖架构    
+    + 所有的编译器与前端都是在 洛书指令语言 基础上进行加糖
+    + 通过加糖，可以构建不同语法的洛书语言
 
-打造开源，简单，强大的国产中文(utf-8/gbk)编程语言
+### 洛书汉语编程
+打造开源，简单，强大的国产中文(utf-8/gbk)编程语言<br>
+国产OpenKylin运行洛书<br>
 ![洛书在国产系统上运行的截图](%E6%B4%9B%E4%B9%A6%E7%A4%BA%E4%BE%8B%E4%BB%A3%E7%A0%81/%E6%B4%9B%E4%B9%A6%E7%A8%8B%E5%BA%8F/%E5%BC%80%E6%94%BE%E9%BA%92%E9%BA%9F.jpg)
 ![输入图片说明](%E6%B4%9B%E4%B9%A6%E7%A4%BA%E4%BE%8B%E4%BB%A3%E7%A0%81/%E6%B4%9B%E4%B9%A6%E7%A8%8B%E5%BA%8F/%E9%BA%92%E9%BA%9F.jpg)
 
-<br>开放麒麟运行洛书
 ### 洛书编程组件 losu programme kit
 开发洛书时的工作环境
 + losu   VM解释器
