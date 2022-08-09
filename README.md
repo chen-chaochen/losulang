@@ -67,6 +67,8 @@ wget https://gitee.com/chen-chaochen/lpk/raw/release/update/install.sh&&sudo bas
 ### Demo
 #### [1. 嵌入式编程/智能家居雏形](https://gitee.com/chen-chaochen/lpk/tree/expand/Demo/%E7%89%A9%E8%81%94%E7%BD%91-%E6%99%BA%E8%83%BD%E5%AE%B6%E5%B1%85%E9%9B%8F%E5%BD%A2)
 
+[运行视频](https://v.douyin.com/jNdYkcY)
+
 ```
 //文件 ./cgi-bin/洛书的家.losu
 +导入 洛书·引脚
@@ -90,7 +92,6 @@ wget https://gitee.com/chen-chaochen/lpk/raw/release/update/install.sh&&sudo bas
     }
 }
 ```
-[[运行视频]](https://gitee.com/chen-chaochen/lpk/raw/expand/Demo/%E7%89%A9%E8%81%94%E7%BD%91-%E6%99%BA%E8%83%BD%E5%AE%B6%E5%B1%85%E9%9B%8F%E5%BD%A2/%E8%BF%90%E8%A1%8C%E8%A7%86%E9%A2%91.mp4)
 
 ```
 //文件 ./cgo-bin/light_on.losu
