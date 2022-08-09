@@ -1,6 +1,6 @@
 ### 案例说明
 有关洛书物联网的完整设计文档 见 https://gitee.com/chen-chaochen/lpk/blob/expand/物联网
-
+因为[qong] :sweat_smile: ,只能用一些零件模拟一下
 本例中 
 + 树莓派4b 模拟 洛书物联网服务器
 + LED灯泡  模拟 物联网设备(客厅顶灯)
