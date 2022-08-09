@@ -39,8 +39,45 @@ wget https://gitee.com/chen-chaochen/lpk/raw/release/update/install.sh&&sudo bas
 
 
 ### Demo
-#### [1. 井字棋](https://gitee.com/chen-chaochen/lpk/tree/expand/Demo/%E4%BA%95%E5%AD%97%E6%A3%8B%E6%B8%B8%E6%88%8F)
-![井字棋](https://gitee.com/chen-chaochen/lpk/raw/expand/Demo/%E4%BA%95%E5%AD%97%E6%A3%8B%E6%B8%B8%E6%88%8F/%E8%BF%90%E8%A1%8C%E6%88%AA%E5%9B%BE.png)
+#### [1. 嵌入式编程]()
+
+```
+//文件 ./cgi-bin/洛书的家.losu
++导入 洛书·引脚
++实例 引脚 引脚18
++类 洛书的家
+{
+    //用接在gpio18上的LED灯模拟客厅顶灯
+    +方法 客厅顶灯()
+    {
+        +方法 点亮()
+        {
+            引脚18·设定("18","1")
+            引脚18·写入("1")
+        }
+        +方法 熄灭()
+        {
+            引脚18·设定("18","1")
+            引脚18·写入("0")
+            引脚18·卸载()
+        }
+    }
+}
+```
+[[运行视频]](https://gitee.com/chen-chaochen/lpk/raw/expand/Demo/%E7%89%A9%E8%81%94%E7%BD%91-%E6%99%BA%E8%83%BD%E5%AE%B6%E5%B1%85%E9%9B%8F%E5%BD%A2/%E8%BF%90%E8%A1%8C%E8%A7%86%E9%A2%91.mp4)
+
+```
+//文件 ./cgo-bin/light_on.losu
++加载 开始
++导入 洛书·标准流
++实例 标准流 标准流
++引用 洛书的家
++实例 洛书的家 洛书的家
++方法 开始()
+{
+    洛书的家·客厅顶灯·点亮()
+}
+```
 
 #### [2. 宇宙文明模拟器](https://gitee.com/chen-chaochen/lpk/tree/expand/Demo/%E5%AE%87%E5%AE%99%E6%96%87%E6%98%8E%E6%A8%A1%E6%8B%9F%E5%99%A8)
 ![模拟器](https://gitee.com/chen-chaochen/lpk/raw/expand/Demo/%E5%AE%87%E5%AE%99%E6%96%87%E6%98%8E%E6%A8%A1%E6%8B%9F%E5%99%A8/运行截图.png)
