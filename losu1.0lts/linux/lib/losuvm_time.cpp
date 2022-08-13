@@ -126,7 +126,7 @@ extern "C"
 	string ls_time_ctime()
 	{
 		string _day_[8] = {"0","周一","周二","周三","周四","周五","周六","周日"};
-		int _pos = atoi(ls_time_localtime_wday());
+		int _pos = atoi(ls_time_localtime_wday().c_str());
 		string _rt;
 		string _rt_year = ls_time_localtime_year();
 		string _rt_mon = ls_time_localtime_mon();
