@@ -8,6 +8,15 @@ Demo 见expand分支<br>
 文档 见wiki与doc分支<br>
 可以阅读此文档以快速了解 [   **洛书编程语言**   ](https://gitee.com/chen-chaochen/lpk/blob/doc/%E6%B4%9B%E4%B9%A6%201.0%20LTS%20%E6%8A%80%E6%9C%AF%E6%96%87%E6%A1%A3/%E7%AE%80%E4%BB%8B%E6%96%87%E6%A1%A3/%E6%B4%9B%E4%B9%A6%E7%9A%84%E8%AE%BE%E8%AE%A1%E6%83%B3%E6%B3%95.md)
 
+### 最新的LTS版本
+####  **洛书1.0 LTS** 
+关于 **洛书1.0 LTS** 与滚动发行版的区别
+可以参照 [ **[文档链接]** ](https://gitee.com/chen-chaochen/lpk/blob/doc/%E6%B4%9B%E4%B9%A6%201.0%20LTS%20%E6%8A%80%E6%9C%AF%E6%96%87%E6%A1%A3/LTS%E4%B8%8E%E6%BB%9A%E5%8A%A8%E7%89%88%E6%9C%AC%E7%9A%84%E4%B8%8D%E5%90%8C.md)<br>
+关于 **洛书1.0 LTS** 的介绍，安装。详见发行版 [**[洛书1.0 LTS]**
+](https://gitee.com/chen-chaochen/lpk/releases/tag/1.0) <br>
+关于 **洛书1.0 LTS** 的技术文档，可参照 [ **[文档链接]** ](https://gitee.com/chen-chaochen/lpk/tree/doc/%E6%B4%9B%E4%B9%A6%201.0%20LTS%20%E6%8A%80%E6%9C%AF%E6%96%87%E6%A1%A3) 
+ 
+
 ### 更新规划
 开发者还在大学学习<br>
 洛书将在 寒暑假期间保持快速更新状态<br> 
