@@ -414,11 +414,6 @@ extern "C"
 {
 	string ls_httpd_start(const char* com) 
     {
-        if (conf == 1)
-        {
-            return "";
-        }
-        conf = 1;
     	int listenfd, connfd;
     	char hostname[MAXLINE], port[MAXLINE];
     	socklen_t clientlen;
