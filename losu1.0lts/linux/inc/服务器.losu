@@ -1,0 +1,24 @@
++类 服务器
+{
+    +方法 启动(端口)
+    {
+        +指令
+        {
+            add [此类]·启动·端口 lvm httpd ls_httpd_start
+        }
+    }
+    +方法 设置文件(文件名,文件类型)
+    {
+        +指令
+        {
+            add [此类]·设置文件·文件类型 add [此类]·设置文件·文件名 lvm httpd ls_httpd_addconf
+        }
+    }
+    +方法 结束()
+    {
+        +指令
+        {
+            lvm httpd ls_httpd_end
+        }
+    }
+}
