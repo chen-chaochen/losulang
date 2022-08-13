@@ -11,7 +11,7 @@ https://gitee.com/chen-chaochen/lpk
 
 
 //file = losuc_head.cpp
-#define LS_PLAT 1
+#define LS_PLAT 2
 //1 == Windows 2 == Linux
 //至此，全部配置已完成，可以编译 
 #include <iostream>
