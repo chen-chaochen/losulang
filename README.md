@@ -12,7 +12,10 @@ Demo 见expand分支<br>
 
 作者博客 [【中文编程的开发历程】](https://my.oschina.net/chenchaochen/blog/5558040)
 
+洛书的文档分支 [[链接]](https://gitee.com/chen-chaochen/lpk/tree/doc/)
+
 [![中文编程](https://gitee.com/Program-in-Chinese/overview/raw/master/%E4%B8%AD%E6%96%87%E7%BC%96%E7%A8%8B.svg)](https://gitee.com/Program-in-Chinese/overview)
+
 
 
 ### 最新的LTS版本
