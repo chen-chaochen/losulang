@@ -8,6 +8,13 @@ Demo 见expand分支<br>
 文档 见wiki与doc分支<br>
 可以阅读此文档以快速了解 [   **洛书编程语言**   ](https://gitee.com/chen-chaochen/lpk/blob/doc/%E6%B4%9B%E4%B9%A6%201.0%20LTS%20%E6%8A%80%E6%9C%AF%E6%96%87%E6%A1%A3/%E7%AE%80%E4%BB%8B%E6%96%87%E6%A1%A3/%E6%B4%9B%E4%B9%A6%E7%9A%84%E8%AE%BE%E8%AE%A1%E6%83%B3%E6%B3%95.md)
 
+知乎问题 [【如何才能创造一门世界顶尖的中文编程语言】](https://www.zhihu.com/question/349028712/answer/2592916410) 的回答
+
+作者博客 [【中文编程的开发历程】](https://my.oschina.net/chenchaochen/blog/5558040)
+
+[![中文编程](https://gitee.com/Program-in-Chinese/overview/raw/master/%E4%B8%AD%E6%96%87%E7%BC%96%E7%A8%8B.svg)](https://gitee.com/Program-in-Chinese/overview)
+
+
 ### 最新的LTS版本
 ####  **洛书1.0 LTS** 
 关于 **洛书1.0 LTS** 与滚动发行版的区别
