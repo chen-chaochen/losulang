@@ -107,6 +107,10 @@ void 预编译(字符串 文件)
             linenum++;
             int i;
             i = 1;
+            if(replace_all(tmp," ","")== "")
+            {
+                continue;
+            }
             do
             {
                 if(mid(tmp,i,1) != " ")
