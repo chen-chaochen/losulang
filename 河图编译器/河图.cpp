@@ -107,7 +107,7 @@ void 预编译(字符串 文件)
             linenum++;
             int i;
             i = 1;
-            if(replace_all(tmp," ","")== "")
+            if(replace_all(tmp," ","") == "")
             {
                 continue;
             }
@@ -129,15 +129,18 @@ void 预编译(字符串 文件)
             }
             if(i == tab + 4)
             {  
-                fs_out<<space("{",tab-1)<<endl;
+                fs_out<<"{"<<endl;
                 fs_out<<tmp<<endl;
                 tab=tab+4;
             }
-            else if(i == tab - 4)
+            else if((i-1) % 4 == 0 && i < tab)
             {
-                fs_out<<space("}",tab-5)<<endl;
+                for (int j = i;j < tab; j = j+4)
+                {
+                    fs_out<<"}"<<endl;
+                }
                 fs_out<<tmp<<endl;
-                tab=tab-4;
+                tab = i;
             }
             else if(i == tab)
             {
@@ -148,16 +151,12 @@ void 预编译(字符串 文件)
                 throw "错误的缩进格式\n";
             }
 
-            if(fs_in.eof()!=0)
-            {
-                break;
-            }
-        }while(1);
+        }while(fs_in.eof()==0);
         if (tab != 1)
         {
-            for(int j = 1;j < tab; j=j+4)
+            for(int k = 1;k < tab; k=k+4)
             {
-                fs_out<<space("}",j-1)<<endl;
+                fs_out<<"}"<<endl;
             }
         }
         fs_in.close();
