@@ -25,7 +25,23 @@ Demo 见expand分支<br>
 关于 **洛书1.0 LTS** 的介绍，安装。详见发行版 [**[洛书1.0 LTS]**
 ](https://gitee.com/chen-chaochen/lpk/releases/tag/1.0) <br>
 关于 **洛书1.0 LTS** 的技术文档，可参照 [ **[文档链接]** ](https://gitee.com/chen-chaochen/lpk/tree/doc/%E6%B4%9B%E4%B9%A6%201.0%20LTS%20%E6%8A%80%E6%9C%AF%E6%96%87%E6%A1%A3) 
- 
+#### 第三方贡献
+#####  1. **[河图编译器](https://gitee.com/chen-chaochen/lpk/tree/expand/河图编译器)**
++ 简介 一个采用类型python语法(强制缩进)的洛书衍生版本
++ 示例代码(你好世界.hetu)
+
+```
+#加载 开始
+#导入 洛书/标准流
+#标准流 标准流
+#方法 开始()
+    标准流.输出("你好，河图！\n")
+    /*
+        这是河图的多行注释
+        也是通过缩进来控制
+//这是单行注释
+```
+
 
 ### 更新规划
 开发者还在大学学习<br>
