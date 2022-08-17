@@ -106,7 +106,33 @@ wget https://gitee.com/chen-chaochen/lpk/raw/release/update/install.sh&&sudo bas
 
 [[洛书物联网架构]](https://gitee.com/chen-chaochen/lpk/blob/expand/%E7%89%A9%E8%81%94%E7%BD%91/readme.md)
 
-[[雏形示例]](https://v.douyin.com/jNdYkcY)
+[[网控小灯]](https://v.douyin.com/jNdYkcY)<br>
+[[交通灯]](https://v.douyin.com//jyxDJPy)
+
+```
+#加载 开始
+#导入 洛书/标准流
+#引用 交通灯
+/*
+    一个自动的交通灯控制程序
+    红灯 2s
+    绿灯 2s
+    黄灯 1s 闪烁5次
+#标准流 程序
+#交通灯 交通灯
+#方法 开始()
+    交通灯.配置("16","20","21")
+    #循环("5")
+        交通灯.红灯.点亮()
+        程序.等待("2000")
+        交通灯.红灯.熄灭()
+        交通灯.黄灯.闪烁()
+        交通灯.绿灯.点亮()
+        程序.等待("2000")
+        交通灯.绿灯.熄灭()
+
+    
+```
 
 
 #### [2. 宇宙文明模拟器](https://gitee.com/chen-chaochen/lpk/tree/expand/Demo/%E5%AE%87%E5%AE%99%E6%96%87%E6%98%8E%E6%A8%A1%E6%8B%9F%E5%99%A8)
