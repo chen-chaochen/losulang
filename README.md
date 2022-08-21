@@ -109,6 +109,7 @@ wget https://gitee.com/chen-chaochen/lpk/raw/release/update/install.sh&&sudo bas
 
 [[洛书物联网架构]](https://gitee.com/chen-chaochen/lpk/blob/expand/%E7%89%A9%E8%81%94%E7%BD%91/readme.md)
 
+[[联网报警器]](https://www.douyin.com/user/MS4wLjABAAAAbwjbvNpvRPNnlWf2iHkGvg_dqhVuMdLz4-csIo8ubS0?modal_id=7133415852505976095)
 [[网控小灯]](https://v.douyin.com/jNdYkcY)<br>
 [[交通灯]](https://v.douyin.com//jyxDJPy)
 
