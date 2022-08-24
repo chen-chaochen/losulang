@@ -65,8 +65,8 @@ wget https://gitee.com/chen-chaochen/lpk/raw/release/update/install.bat&install.
 ```
 wget https://gitee.com/chen-chaochen/lpk/raw/release/update/install.sh&&sudo bash ./install.sh&&sudo rm ./install.sh
 
-master分支下的源码仅作预览用途，各发行版源码见release分支
 ```
+master分支下的源码仅作预览用途，各发行版源码见release分支
 ### 加入洛书
 1. 加入仓库,参与洛书标准的制定及LPK组件的开发
 2. 在expand分支提交pr，参与洛书拓展库的开发
