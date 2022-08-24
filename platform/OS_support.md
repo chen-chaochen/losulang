@@ -18,6 +18,7 @@
 |----------|------------------------|
 | Deepin20 | OK                     |
 | 银河麒麟     | OK                     |
+| Openkylin     | x86 OK<br>RISC-V OK    |
 | UOS      | OK                     |
 | 欧拉       | OK                     |
 | CentOS 5~8  | OK               |
