@@ -193,10 +193,6 @@ int main(int argc,const char** argv)
         {
             return 1;
         }
-        if(system(("losu "+ mainfile+".lsc").c_str())!=0)
-        {
-            return 1;
-        }
         //remove((mainfile+".losu").c_str());
         return 0;
     }
