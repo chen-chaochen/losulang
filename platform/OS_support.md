@@ -11,7 +11,7 @@
 | Ubuntu 16.04 32位| linux4.8.0-x86|
 | Ubuntu meta |linux5.4-arm|
 | Android  | x86 [需移植]<br>arm [需移植] |
-|Losu Os zero(linux4.8内核 + 运行环境)|x86|
+|Losu Os zero(linux4.8内核 + 运行环境)|x86 OK<br>x64 OK<br>Arm OK|
 2. 虚拟机结果
 
 | 系统       | 结果                     |
