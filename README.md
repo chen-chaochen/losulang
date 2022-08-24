@@ -2,7 +2,7 @@
 <a href='https://gitee.com/chen-chaochen/lpk/stargazers'><img src='https://gitee.com/chen-chaochen/lpk/badge/star.svg?theme=dark' alt='star'></img></a>
 <a href='https://gitee.com/chen-chaochen/lpk/members'><img src='https://gitee.com/chen-chaochen/lpk/badge/fork.svg?theme=dark' alt='fork'></img></a><a href='https://gitee.com/chen-chaochen/lpk'><img src='https://gitee.com/chen-chaochen/lpk/widgets/widget_1.svg' alt='Fork me on Gitee'></img></a>
 ### 洛书编程语言
-![输入图片说明](%E6%B4%9B%E4%B9%A6%E7%A4%BA%E4%BE%8B%E4%BB%A3%E7%A0%81/%E6%B4%9B%E4%B9%A6%E7%A8%8B%E5%BA%8F/readme.gif)
+![输入图片说明](Demo/readme.gif)
 
 #### 简介
 洛书·Losu(Language Of Systemed Units)，单位系统化编程语言，是一款开源，轻量，跨平台，易拓展的中文编程语言。
