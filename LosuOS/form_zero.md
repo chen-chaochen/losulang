@@ -46,6 +46,7 @@ sudo grub-install --root-directory=/mnt /dev/sdb
 + 如果放弃了动态库加载，lvm/lsi/lei接口都将失效，可以修改洛书基本类的源码，将对应函数转接到api接口上去。
 + 将调整后的洛书库编译后放在 ！！宿主机！！ 上，不推荐将编译器一起移植过去，编码是个烦人的问题。
 5. 编写 Losu-init
+
 在宿主机上随便写个程序，假设调整后的洛书类全部放在了LS_ROOT/inc/LOS目录下，Losu-init指向init.lsc
 ```
 //文件名 init.hetu
