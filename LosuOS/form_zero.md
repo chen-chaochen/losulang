@@ -21,6 +21,7 @@ sudo fdisk /dev/sdb
 sudo mkfs.ext4 /dev/sdb1
 ```
 2. 安装引导器
+
 UEF引导的设备可以考虑grub，如果是开发板等设备自行安装支持的引导器，这里以grub为例。
 
 - 挂载sdb1到 /mnt 目录 (可以改成其他更方便的目录)
