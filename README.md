@@ -63,7 +63,7 @@ wget https://gitee.com/chen-chaochen/lpk/raw/release/update/install.bat&install.
 ```
 + linux
 ```
-wget https://gitee.com/chen-chaochen/lpk/raw/release/update/install.sh&&sudo bash ./install.sh&&sudo rm ./install.sh
+sudo wget https://gitee.com/chen-chaochen/lpk/raw/release/update/install.sh&&sudo bash ./install.sh&&sudo rm ./install.sh
 
 ```
 master分支下的源码仅作预览用途，各发行版源码见release分支
