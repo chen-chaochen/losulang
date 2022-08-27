@@ -40,7 +40,7 @@ sudo grub-install --root-directory=/mnt /dev/sdb
     - 修改losu.cpp，在main()返回前添个死循环，或者专门写个死循环的程序去调用losu。
     - 修改losu.cpp，让它从指定洛书程序(Losu-init，可以放在/losu目录下)开始解释而不是根据命令行参数选择脚本。
     - 如果是小型的嵌入式系统，可以放弃动态库加载，直接将所需功能统一添加到losu.cpp api()函数中，这样可以减少移植动态libc的时间，如果不用多线程，可以直接删去线程有关的代码。
-    - 静态编译`g++ -static -o losu losu.cpp -lpthread`，复制到LosuOs中。
+    - 静态编译`g++ -static -o losu losu.cpp -lpthread`，复制到LosuOs中。需要安装libc-dev，否则dl库在静态链接时会出现段错误/核心转储错误。
 - 复制Linux内核，编写grub.cfg(百度搜一下，很好写的)，init指向Linux-init。
 4. 调整洛书库
 + 如果放弃了动态库加载，lvm/lsi/lei接口都将失效，可以修改洛书基本类的源码，将对应函数转接到api接口上去。
