@@ -1,9 +1,8 @@
 /*
-LPK0.4
-Losu Program-language Kits 0.4
+LPK 0.4 fixed2
+Losu Program-language Kits 0.4.2
 Powered by chen-chaochen
 https://gitee.com/chen-chaochen/lpk
-License GPL-3.0 
 */
 
 /*
@@ -288,7 +287,7 @@ void lsc::loadlib(string _falib,string _sonlib)
 {
     ofstream fout;
     fout.open(objlib,ios::app);
-    fout<<ls_endl()<<replace_all(findclass(_falib),"[此类]·",_sonlib + "·")<<endl;
+    fout<<ls_endl()<<replace_all(replace_all(findclass(_falib),"[此类]·","[此类]."),"[此类].",_sonlib + ".")<<endl;
     fout.close();
 }
 void lsc::includelib(string _libname)
@@ -395,6 +394,7 @@ void lsc::ana_math_exp(string _exp,string _valfore)
                 }
                 tmp = tmp +  mid(exp_,pos,1);
             } while (pos <= exp_.length());
+            tmp = replace_all(tmp,"·",".");
             fs_out<<" add "<<tmp<<" ";
             fs_out<<"api "<<_tmp<<" ";
         }
@@ -623,6 +623,7 @@ void lsc::makefile(string _endsign,string _valfore,string _extends)
     编译器核心算法
     */
     string tmp,sign,sign_tmp;
+    string fa_lib,son_lib;
     int _pos,i;
     try
     {
@@ -659,7 +660,7 @@ void lsc::makefile(string _endsign,string _valfore,string _extends)
                     } while (fs_in.eof() == 0);
                     break;
                 }
-                if (mid(tmp,_pos,1) == "+")
+                if (mid(tmp,_pos,1) == "+"||mid(tmp,_pos,1) == "@")
                 {
                     sign = "";
                     do
@@ -708,6 +709,7 @@ void lsc::makefile(string _endsign,string _valfore,string _extends)
                         if (mid(sign,1,1) == "<")
                         {
                             sign = mid(sign,2,sign.length() - 2);
+                            sign = replace_all(sign,"·",".");
                         }
                         else
                         {
@@ -753,6 +755,34 @@ void lsc::makefile(string _endsign,string _valfore,string _extends)
                         close_sign_num++;
                         break;
                     }
+                    if (replace_all(sign," ","") == "网页")
+                    {
+                        getline(fs_in,sign);
+                        if (replace_all(sign," ","") != "{")
+                        {
+                            throw "缺少标识符 \"{\"\n";
+                        }
+                        open_sign_num++;
+                        linenum++;
+                        fs_out<<"<webui>"<<endl;
+                        do
+                        {
+                            getline(fs_in,sign);
+                            linenum++;
+                            if (replace_all(sign," ","") == "}")
+                            {
+                                break;
+                            }
+                            if (fs_in.eof() == 1)
+                            {
+                                throw "缺少标识符 \"}\"";
+                            }
+                            fs_out<<sign<<" "<<endl;
+                        } while (1);
+                        fs_out<<"</webui>"<<endl;
+                        close_sign_num++;
+                        break;
+                    }
                     if (replace_all(sign," ","") == "类")
                     {
                         sign = "";
@@ -770,7 +800,7 @@ void lsc::makefile(string _endsign,string _valfore,string _extends)
                         linenum++;
                         open_sign_num++;
                         fs_out<<"<"<<_valfore<<sign<<">"<<endl;
-                        makefile(sign,"[此类]·","");
+                        makefile(sign,"[此类].","");
                         break;
                     }
                     if (replace_all(sign," ","") == "方法")
@@ -803,7 +833,7 @@ void lsc::makefile(string _endsign,string _valfore,string _extends)
                             _pos++;
                             if (mid(tmp,_pos,1) == ",")
                             {
-                                _voidconf = _voidname + "·" + _voidconf;
+                                _voidconf = _voidname + "." + _voidconf;
                                 _voidconf = replace_all(_voidconf," ","");
                                 fs_out<<_voidconf<<" ";
                                 _voidconf = "";
@@ -811,7 +841,7 @@ void lsc::makefile(string _endsign,string _valfore,string _extends)
                             }
                             if (mid(tmp,_pos,1) == ")")
                             {
-                                _voidconf = _voidname + "·" + _voidconf;
+                                _voidconf = _voidname + "." + _voidconf;
                                 _voidconf = replace_all(_voidconf," ","");
                                 fs_out<<_voidconf<<" ";
                                 _voidconf = "";
@@ -831,7 +861,7 @@ void lsc::makefile(string _endsign,string _valfore,string _extends)
                         }
                         linenum++;
                         open_sign_num++;
-                        makefile(_voidname,_voidname + "·","");
+                        makefile(_voidname,_voidname + ".","");
                         break;
                     }
                     if (replace_all(sign," ","") == "继承")
@@ -867,7 +897,7 @@ void lsc::makefile(string _endsign,string _valfore,string _extends)
                         linenum++;
                         open_sign_num++;
                         fs_out<<"<"<<_valfore<<son_class<<">"<<endl;
-                        makefile(son_class,"[此类]·",findclass_exp(sign));
+                        makefile(son_class,"[此类].",findclass_exp(sign));
                         break;
                     }
                     if (replace_all(sign," ","") == "线程")
@@ -950,14 +980,13 @@ void lsc::makefile(string _endsign,string _valfore,string _extends)
                             incname = incname + mid(tmp,_pos,1);
                         } while (_pos < tmp.length());
                         incname = replace_all(incname," ","");
-                        incname = replace_all(incname,"·","/");
+                        incname = replace_all(incname,".","/");
                         addlib(incname);
                         remove((incname+".lsc").c_str());
                         break;
                     }
                     if (replace_all(sign," ","") == "实例")
                     {
-                        string fa_lib,son_lib;
                         fa_lib = "";
                         do
                         {
@@ -1049,7 +1078,25 @@ void lsc::makefile(string _endsign,string _valfore,string _extends)
                         fs_out<<endl<<"clear " +ifname+".logic1 clear "+ ifname +".logic2"<<endl;
                         break;
                     }
-
+                    
+                    fa_lib = replace_all(sign," ","");
+                    if (_pos == tmp.length())
+                    {
+                        throw "错误的语法格式\n";
+                    }
+                    son_lib = "";
+                    do
+                    {
+                        _pos++;
+                        son_lib = son_lib + mid(tmp,_pos,1);
+                    } while (_pos < tmp.length());
+                    son_lib = replace_all(son_lib," ","");
+                    if (son_lib == "")
+                    {
+                        throw "错误的语法格式\n";
+                    }
+                    loadlib(fa_lib,son_lib);
+                    break;
                 }
                 if (mid(tmp,_pos,1) == "}")
                 {
@@ -1079,7 +1126,7 @@ void lsc::makefile(string _endsign,string _valfore,string _extends)
                 if (mid(tmp,_pos,1) == "(")
                 {
                     string voidtmp;
-                    string voidname = replace_all(mid(tmp,1,_pos - 1)," ","");
+                    string voidname = replace_all(replace_all(mid(tmp,1,_pos - 1)," ",""),"·",".");
                     ifstream _tmp_fin;
                     _tmp_fin.close();
                     _tmp_fin.open(objlib);
@@ -1177,7 +1224,6 @@ void lsc::makefile(string _endsign,string _valfore,string _extends)
         remove(classlib.c_str());
         remove(objlib.c_str());
         remove(outtmp.c_str());
-
         exit(linenum);
     }
         
@@ -1193,7 +1239,7 @@ int main(int argc,const char** argv)
     main_argv = argv;
     if (argc == 1)
     {
-        cout<<"洛书汉语编程开发组件\nLosu Program Kits Losu 0.4\n洛书编译器\n(c) Chen-chaochen\nLicense GPL-3.0\n\a";
+        cout<<"洛书编程语言 0.4.2\nLosu Program Kits Losu 0.4 fixed 2\n组件:   洛书编译器\n(c) 陈朝臣\n遵循 洛书使用协议,第一版\n";
     }
     else
     {
