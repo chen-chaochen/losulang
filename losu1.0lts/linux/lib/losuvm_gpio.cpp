@@ -64,7 +64,7 @@ extern "C"
     }
     string ls_gpio_read(const char* gpio)
     {
-        int val;
+        string val;
         ifstream _f;
         string _gpio_file;
         string _gpio = gpio;
@@ -76,6 +76,6 @@ extern "C"
         }
         _f>>val;
         _f.close();
-        return to_string(val);
+        return to_string(atoi(val));
     }
 }
