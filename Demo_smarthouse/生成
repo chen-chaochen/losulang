@@ -1,0 +1,26 @@
+#!/bin/sh
+mkdir ./release
+mkdir ./release/cgi-bin
+河图 检测1
+河图 检测2
+河图 检测3
+河图 检测4
+河图 声控灯
+河图 服务器
+河图 检测火警
+河图 检测防盗
+河图 beep_pause
+河图 red_open
+河图 red_close
+rm *.losu
+cp 运行 ./release
+cp *.lsc ./release
+cp red_open.lsc ./release/cgi-bin
+cp red_close.lsc ./release/cgi-bin
+cp beep_pause.lsc ./release/cgi-bin
+rm *.lsc
+cd ./release
+tar -cf ../解决方案.tar *
+scp -r -q ./* root@192.168.0.106:/home/orangepi/
+cd ../
+rm -r release

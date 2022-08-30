@@ -1,0 +1,10 @@
+#!/bin/sh
+cd /home/orangepi
+./检测1.lsc&
+./检测2.lsc&
+./检测3.lsc&
+./检测4.lsc&
+./声控灯.lsc&
+./检测防盗.lsc&
+./检测火警.lsc&
+./服务器.lsc&
