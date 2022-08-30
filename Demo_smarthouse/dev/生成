@@ -1,0 +1,13 @@
+#!/bin/sh
+sudo mkdir /usr/local/lib/losu/inc/设备
+河图 触摸板
+河图 灯
+河图 风扇
+河图 红外报警器
+河图 火焰报警器
+河图 门铃
+河图 蜂鸣器
+sudo cp ./*.lsc /usr/local/lib/losu/inc/设备
+rm *.lsc
+rm *.losu
+exit 0
