@@ -56,14 +56,14 @@ Demo源码下载见expand分支<br>
 ### 安装&更新
 洛书采用类似镜像源的安装方式，通过一行命令，即从源码开始生成最新的版本
 
-在一个空的文件夹内打开终端，输入以下命令(安装有wget与g++编译器)，静待安装结束就OK了
+在一个空的文件夹内打开终端，复制以下命令(安装有wget与g++编译器)，静待安装结束就OK了
 + windows
 ```
-wget https://gitee.com/chen-chaochen/lpk/raw/release/update/install.bat&install.bat
+wget  --no-check-certificate https://gitee.com/chen-chaochen/lpk/raw/release/update/install.bat&install.bat
 ```
 + linux
 ```
-sudo wget https://gitee.com/chen-chaochen/lpk/raw/release/update/install.sh&&sudo bash ./install.sh&&sudo rm ./install.sh
+sudo wget  --no-check-certificate https://gitee.com/chen-chaochen/lpk/raw/release/update/install.sh&&sudo bash ./install.sh&&sudo rm ./install.sh
 
 ```
 master分支下的源码仅作预览用途，各发行版源码见release分支<br>
