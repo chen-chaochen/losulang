@@ -129,12 +129,12 @@ void forecompiler(string 文件)
         fs_out.close();
 
     }
-    catch(const char* 错误信息)
+    catch(const char* errinf)
     {
         fs_in.close();
         fs_out.close();
         cout<< "河图编译器\n####错误####\n在源文件 "<<文件<<".hetu 中\n第: "<<linenum<<" 行\n";
-        cout<<错误信息<<endl;
+        cout<<errinf<<endl;
         remove((文件+".losu").c_str());
         exit(linenum);
     }
