@@ -56,7 +56,7 @@ string space(string a,int b)
 }
 int tab;
 long linenum;
-void forecompiler(string 文件)
+void forecompiler(string _file)
 {
     linenum = 0;
     ifstream fs_in;
@@ -64,8 +64,8 @@ void forecompiler(string 文件)
     try
     {
         //打开mainfile
-        fs_in.open(文件+".hetu");
-        fs_out.open(文件+".losu");
+        fs_in.open(_file+".hetu");
+        fs_out.open(_file+".losu");
         do
         {
             string tmp;
@@ -133,9 +133,9 @@ void forecompiler(string 文件)
     {
         fs_in.close();
         fs_out.close();
-        cout<< "河图编译器\n####错误####\n在源文件 "<<文件<<".hetu 中\n第: "<<linenum<<" 行\n";
+        cout<< "河图编译器\n####错误####\n在源_file "<<_file<<".hetu 中\n第: "<<linenum<<" 行\n";
         cout<<errinf<<endl;
-        remove((文件+".losu").c_str());
+        remove((_file+".losu").c_str());
         exit(linenum);
     }
     return;
@@ -151,7 +151,7 @@ int main(int argc,const char** argv)
         i.open((mainfile+".hetu").c_str());
         if(i.is_open()==0)
         {
-            cout<<"河图编译器    找不到指定文件!\n";
+            cout<<"河图编译器    找不到指定_file!\n";
             exit(0);
         }
         i.close();
