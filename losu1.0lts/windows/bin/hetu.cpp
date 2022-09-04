@@ -56,16 +56,16 @@ string space(string a,int b)
 }
 int tab;
 long linenum;
-void forecompiler(string ÎÄ¼ş)
+void forecompiler(string _file )
 {
     linenum = 0;
     ifstream fs_in;
     ofstream fs_out;
     try
     {
-        //´ò¿ªmainfile
-        fs_in.open(ÎÄ¼ş+".hetu");
-        fs_out.open(ÎÄ¼ş+".losu");
+        //æ‰“å¼€mainfile
+        fs_in.open(_file +".hetu");
+        fs_out.open(_file +".losu");
         do
         {
             string tmp;
@@ -114,7 +114,7 @@ void forecompiler(string ÎÄ¼ş)
             }
             else
             {
-                throw "´íÎóµÄËõ½ø¸ñÊ½\n";
+                throw "é”™è¯¯çš„ç¼©è¿›æ ¼å¼\n";
             }
 
         }while(fs_in.eof()==0);
@@ -133,9 +133,9 @@ void forecompiler(string ÎÄ¼ş)
     {
         fs_in.close();
         fs_out.close();
-        cout<< "ºÓÍ¼±àÒëÆ÷\n####´íÎó####\nÔÚÔ´ÎÄ¼ş "<<ÎÄ¼ş<<".hetu ÖĞ\nµÚ: "<<linenum<<" ĞĞ\n";
+        cout<< "æ²³å›¾ç¼–è¯‘å™¨\n####é”™è¯¯####\nåœ¨æº_file  "<<_file <<".hetu ä¸­\nç¬¬: "<<linenum<<" è¡Œ\n";
         cout<<errinf<<endl;
-        remove((ÎÄ¼ş+".losu").c_str());
+        remove((_file +".losu").c_str());
         exit(linenum);
     }
     return;
@@ -151,7 +151,7 @@ int main(int argc,const char** argv)
         i.open((mainfile+".hetu").c_str());
         if(i.is_open()==0)
         {
-            cout<<"ºÓÍ¼±àÒëÆ÷    ÕÒ²»µ½Ö¸¶¨ÎÄ¼ş!\n";
+            cout<<"æ²³å›¾ç¼–è¯‘å™¨    æ‰¾ä¸åˆ°æŒ‡å®š_file !\n";
             exit(0);
         }
         i.close();
@@ -163,6 +163,6 @@ int main(int argc,const char** argv)
         //remove((mainfile+".losu").c_str());
         return 0;
     }
-    cout<<"ÂåÊé±à³ÌÓïÑÔ 1.0 LTS\nLosu Program Kits Losu 1.0 LTS\n×é¼ş:   ºÓÍ¼±àÒëÆ÷\n(c) ³Â³¯³¼\n×ñÑ­ ÂåÊéÊ¹ÓÃĞ­Òé,µÚÒ»°æ\n";
+    cout<<"æ´›ä¹¦ç¼–ç¨‹è¯­è¨€ 1.0 LTS\nLosu Program Kits Losu 1.0 LTS\nç»„ä»¶:   æ²³å›¾ç¼–è¯‘å™¨\n(c) é™ˆæœè‡£\néµå¾ª æ´›ä¹¦ä½¿ç”¨åè®®,ç¬¬ä¸€ç‰ˆ\n";
     return 0;
 }
