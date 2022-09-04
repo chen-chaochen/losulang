@@ -1,34 +1,22 @@
+### åŸºæœ¬ä¿¡æ¯
 ```
-/*
     Information
     LOSU expand_pac  logo_graphic based on EasyX or libgraph
     This can work on losu1.0_LTS+
     (c) chen-chaochen
-    MIT
+    GPL-3.0
 
-    »ù±¾ÐÅÏ¢
-    Ò»¸öÀàËÆÓÚLOGOµÄÍØÕ¹¿â£¬»ùÓÚEasyX»òÕßlibgrapth·â×°ÊµÏÖ
-    ÊÊÓÃÓÚ ÂåÊé1.0LTS ¼°ÒÔÉÏµÄ°æ±¾
-    (c) ³Â³¯³¼
-    ´úÂë×ñÑ­ MIT Ð­Òé
-*/ 
-
-/*
-    ÈçºÎ°²×°
-    1.°²×°C¿â
-        *****WINDOWS*****
-            ***´ÓÔ´Âë°²×°***
-                1. ÏÂÔØEasyX¿â£¬½«ËüÌí¼Óµ½±àÒëÆ÷Àï¡£
-                2. ±àÒëlosuvm_logo.cpp,Éú³ÉsharedÎÄ¼þlosuvm_logo.lsd²¢¸´ÖÆµ½C:\losu\lvmÄ¿Â¼ÏÂ
-            ***´Ó¶þ½øÖÆ°²×°***
-                1. ÏÂÔØºÏÊÊÎ»ÊýµÄ losuvm_logo.lsd(x86/x64)£¬¸´ÖÆµ½C:\losu\lvmÄ¿Â¼ÏÂ£¬ÖØÃüÃûÎª losuvm_logo.lsd
-        *****LINUX*****
-            ***°²×°libgrapth***
-            ***´ÓÔ´Âë°²×°***
-                1. ÏÂÔØlosuvm_logo.cpp£¬±àÒëÉú³É losuvm_logo.lsd ¸´ÖÆµ½LS_ROOT/losu/lvm
-
-    2.±àÒëÂåÊé¿â
-        losuc »­Í¼
-        ½« »­Í¼.lsc¸´ÖÆµ½LS_ROOT/incÏÂ
-*/
+    åŸºæœ¬ä¿¡æ¯
+    ä¸€ä¸ªç±»ä¼¼äºŽLOGOçš„æ‹“å±•åº“ï¼ŒåŸºäºŽEasyXæˆ–è€…libgrapthå°è£…å®žçŽ°
+    é€‚ç”¨äºŽ æ´›ä¹¦1.0LTS åŠä»¥ä¸Šçš„ç‰ˆæœ¬
+    (c) é™ˆæœè‡£
+    ä»£ç éµå¾ª GPL-3.0 åè®®
 ```
+
+### å®‰è£…æ–¹å¼
+1. ä¸‹è½½ æµ·é¾Ÿ.losuã€‚è¿è¡Œå‘½ä»¤```losuc æµ·é¾Ÿ```ç¼–è¯‘å‡º```æµ·é¾Ÿ.lsc```
+2. ä¸‹è½½åˆé€‚çš„.lsd(x86/x64)æ–‡ä»¶ï¼Œlinuxå¹³å°éœ€å®‰è£…libgraphå¹¶ä»Žæºç ç¼–è¯‘ç”Ÿæˆ.lsdæ–‡ä»¶
+3. å°†lsdæ–‡ä»¶å¤åˆ¶åˆ° LS_ROOT/lvm ç›®å½•ä¸‹(Windowsä¸‹é»˜è®¤ LS_ROOT = C:\losu)
+4. å°†æµ·é¾Ÿ.lscå¤åˆ¶åˆ° LS_ROOT/inc ç›®å½•ä¸‹
+
+### ä»£ç è§£æž
