@@ -19,4 +19,4 @@
 3. 将lsd文件复制到 LS_ROOT/lvm 目录下(Windows下默认 LS_ROOT = C:\losu)
 4. 将海龟.lsc复制到 LS_ROOT/inc 目录下
 
-### 代码解析
+### 使用文档见 [海龟库](https://gitee.com/chen-chaochen/lpk/blob/doc/海龟库/readme.md)
