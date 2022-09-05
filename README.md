@@ -101,7 +101,31 @@ master分支下的源码仅作预览用途，各发行版源码见release分支<
 
 
 ### Demo(单击标题前往链接)
-#### [1. 物联网/嵌入式](https://gitee.com/chen-chaochen/lpk/tree/doc/%E5%B5%8C%E5%85%A5%E5%BC%8F)
+#### [海龟库](https://gitee.com/chen-chaochen/lpk/blob/expand/%E6%B5%B7%E9%BE%9F%E5%BA%93/readme.md)
+![输入图片说明](Demo/5.png)
+
+
+```
+#加载 开始
+#导入 海龟
+#海龟 海龟
+#方法 开始()
+    海龟.初始化("600","600")
+    步幅 = "2"
+    #循环("70")
+        海龟.画笔.颜色("红")
+        海龟.前进(步幅)
+        海龟.右转("85")
+        步幅 = 步幅 + "2"
+        海龟.画笔.颜色("蓝")
+        海龟.前进(步幅)
+        海龟.右转("85")
+        步幅 = 步幅 + "2"
+    海龟.停止()    
+```
+
+
+#### [物联网/嵌入式](https://gitee.com/chen-chaochen/lpk/tree/doc/%E5%B5%8C%E5%85%A5%E5%BC%8F)
 
 [[洛书物联网架构]](https://gitee.com/chen-chaochen/lpk/blob/expand/%E7%89%A9%E8%81%94%E7%BD%91/readme.md)
 
@@ -135,19 +159,19 @@ master分支下的源码仅作预览用途，各发行版源码见release分支<
 ```
 
 
-#### [2. 宇宙文明模拟器](https://gitee.com/chen-chaochen/lpk/tree/expand/Demo/%E5%AE%87%E5%AE%99%E6%96%87%E6%98%8E%E6%A8%A1%E6%8B%9F%E5%99%A8)
+#### [宇宙文明模拟器](https://gitee.com/chen-chaochen/lpk/tree/expand/Demo/%E5%AE%87%E5%AE%99%E6%96%87%E6%98%8E%E6%A8%A1%E6%8B%9F%E5%99%A8)
 ![模拟器](https://gitee.com/chen-chaochen/lpk/raw/expand/Demo/%E5%AE%87%E5%AE%99%E6%96%87%E6%98%8E%E6%A8%A1%E6%8B%9F%E5%99%A8/运行截图.png)
 ![终端](https://gitee.com/chen-chaochen/lpk/raw/expand/Demo/%E5%AE%87%E5%AE%99%E6%96%87%E6%98%8E%E6%A8%A1%E6%8B%9F%E5%99%A8/运行截图2.png)
 
-#### [3. 宇宙文明模拟器服务器版本](https://gitee.com/chen-chaochen/lpk/tree/expand/Demo/宇宙文明模拟器服务器版)
+#### [宇宙文明模拟器服务器版本](https://gitee.com/chen-chaochen/lpk/tree/expand/Demo/宇宙文明模拟器服务器版)
 ![输入图片说明](Demo/%E9%BB%91%E6%9A%97%E6%A3%AE%E6%9E%97%E6%88%AA%E5%9B%BE.png)
 ![输入图片说明](%E9%BB%91%E6%9A%97%E6%A3%AE%E6%9E%97%E6%88%AA%E5%9B%BE2.png)
 ![输入图片说明](Demo/%E9%BB%91%E6%9A%97%E6%A3%AE%E6%9E%97%E6%9C%8D%E5%8A%A1%E5%99%A8.png)
 
-#### [4. 洛书CGI编程](https://gitee.com/chen-chaochen/lpk/blob/master/%E6%B4%9B%E4%B9%A6CGI%E7%BC%96%E7%A8%8B.md)
+#### [洛书CGI编程](https://gitee.com/chen-chaochen/lpk/blob/master/%E6%B4%9B%E4%B9%A6CGI%E7%BC%96%E7%A8%8B.md)
 ![输入图片说明](Demo/CGI.png)
 
-#### [5. 洛书服务器](https://gitee.com/chen-chaochen/lpk/tree/expand/%E6%B4%9B%E4%B9%A6%E6%9C%8D%E5%8A%A1%E5%99%A8)
+#### [洛书服务器](https://gitee.com/chen-chaochen/lpk/tree/expand/%E6%B4%9B%E4%B9%A6%E6%9C%8D%E5%8A%A1%E5%99%A8)
 ![服务器服务端](Demo/%E6%9C%8D%E5%8A%A1%E5%99%A8.png)
 ![服务器客户端](Demo/%E6%9C%8D%E5%8A%A1%E5%99%A82.png)
 
