@@ -1,0 +1,207 @@
++导入 洛书/标准流
++继承 标准流 海龟
+{
+    +方法 初始化(长,宽)
+    {
+        +指令
+        {
+            add [此类].初始化.宽 add [此类].初始化.长 lvm logo ls_logo_init
+        }
+        +回收 长
+        +回收 宽
+    }
+    +方法 背景()
+    {
+        +方法 颜色(颜色名)
+        {
+            +指令
+            {
+                add [此类].背景.颜色.颜色名 lvm logo ls_logo_sbc
+            }
+            +回收 颜色名
+        }
+        +方法 调色(颜色值)
+        {
+            +指令
+            {
+                add [此类].背景.调色.颜色值 lvm logo ls_logo_sbc_rgb
+            }
+            +回收 颜色值
+        }
+    }
+    +方法 画笔()
+    {
+        +方法 颜色(颜色名)
+        {
+            +指令
+            {
+                add [此类].画笔.颜色.颜色名 lvm logo ls_logo_slc
+            }
+            +回收 颜色名
+        }
+        +方法 调色(颜色值)
+        {
+            +指令
+            {
+                add [此类].画笔.调色.颜色值 lvm logo ls_logo_slc_rgb
+            }
+            +回收 颜色值
+        }
+    }
+    +方法 清空()
+    {
+        +指令
+        {
+            lvm logo ls_logo_cls 
+        }
+    }
+    +方法 归位()
+    {
+        +指令
+        {
+            lvm logo ls_logo_home
+        }
+    }
+    +方法 前进(步数)
+    {
+        +指令
+        {
+            add [此类].前进.步数 lvm logo ls_logo_fd
+        }
+        +回收 步数
+    }
+    +方法 后退(步数)
+    {
+        +指令
+        {
+            add [此类].后退.步数 lvm logo ls_logo_bd
+        }
+        +回收 步数
+    }
+    +方法 左转(度数)
+    {
+        +指令
+        {
+            add [此类].左转.度数 lvm logo ls_logo_tl
+        }
+        +回收 度数
+    }
+    +方法 右转(度数)
+    {
+        +指令
+        {
+            add [此类].右转.度数 lvm logo ls_logo_tr
+        }
+    }
+    +方法 点()
+    {
+        +指令
+        {
+            lvm logo ls_logo_dot
+        }
+    }
+    +方法 圆(半径)
+    {
+        +指令
+        {
+            add [此类].圆.半径 lvm logo ls_logo_circle
+        }
+        +回收 半径
+    }
+    +方法 椭圆(长轴,短轴)
+    {
+        +指令
+        {
+            add [此类].椭圆.短轴 add [此类].椭圆.长轴 lvm logo ls_logo_ellipse
+        }
+        +回收 长轴
+        +回收 短轴
+    }
+    +方法 矩形(长,宽)
+    {
+        +指令
+        {
+            add [此类].矩形.宽 add [此类].矩形.长 lvm logo ls_logo_rect
+        }
+    }
+    +方法 定位(x,y)
+    {
+        +指令
+        {
+            add [此类].定位.y add [此类].定位.x lvm logo ls_logo_goto
+        }
+        +回收 x
+        +回收 y
+    }
+    +方法 填充()
+    {
+        +方法 颜色(颜色名)
+        {
+            +指令
+            {
+                add [此类].填充.颜色.颜色名 lvm logo ls_logo_fill
+            }
+            +回收 颜色名
+        }
+        +方法 调色(颜色值)
+        {
+            +指令
+            {
+                add [此类].填充.调色.颜色值 lvm logo ls_logo_fill_rgb
+            }
+            +回收 颜色值
+        }
+    }
+    +方法 调整大小(长,宽)
+    {
+        +指令
+        {
+            add [此类].调整大小.宽 add [此类].调整大小.长 lvm logo ls_logo_resize
+        }
+        +回收 长
+        +回收 宽
+    }
+    +方法 抬笔()
+    {
+        +指令
+        {
+            lvm logo ls_logo_to
+        }
+    }
+    +方法 落笔()
+    {
+        +指令
+        {
+            lvm logo ls_logo_td
+        }
+    }
+    +方法 关闭()
+    {
+        +指令
+        {
+            lvm logo ls_logo_close
+        }
+    }
+    +方法 加载图片(图片)
+    {
+        +指令
+        {
+            add [此类].加载图片.图片 lvm logo ls_logo_loadimg
+        }
+        +回收 图片
+    }
+    +方法 另存为(图片)
+    {
+        +指令
+        {
+            add [此类].另存为.图片 lvm logo ls_logo_saveimg
+        }
+    }
+    +方法 停止()
+    {
+        +循环("-1")
+        {
+        }
+    }
+
+}
