@@ -1,0 +1,43 @@
++类 引脚
+{
+    +属性 编号
+    +方法 设定(编号,模式)
+    {
+        /{
+            加载并设定指定编号的GPIO
+            模式值 
+                0 == 输入
+                1 == 输出 
+        }
+        <[此类].编号> = 编号
+        +指令
+        {
+            add [此类].设定.编号 lvm gpio ls_gpio_export
+            add [此类].设定.模式 add [此类].设定.编号 lvm gpio ls_gpio_model
+        }
+        +回收 编号
+        +回收 模式
+    }
+    +方法 读取()
+    {
+        +指令
+        {
+            add [此类].编号 lvm gpio ls_gpio_read mov [此类].读取
+        }
+    }
+    +方法 写入(状态)
+    {
+        +指令
+        {
+            add [此类].写入.状态 add [此类].编号 lvm gpio ls_gpio_value
+        }
+        +回收 状态
+    }
+    +方法 卸载()
+    {
+        +指令
+        {
+            add [此类].编号 lvm gpio ls_gpio_unexport
+        }
+    }
+}
