@@ -1,5 +1,5 @@
 @echo off
-echo ÂåÊé±à³ÌÓïÑÔ 1.0 LTS
+echo æ´›ä¹¦ç¼–ç¨‹è¯­è¨€ 1.0 LTS
 echo ********************************
 echo *       Losu Program Kits      *
 echo *         Instaling...         *
@@ -12,9 +12,9 @@ mkdir C:\losu
 mkdir C:\losu\lvm
 mkdir C:\losu\bin
 mkdir C:\losu\inc
-mkdir C:\losu\inc\ÂåÊé
+mkdir C:\losu\inc\æ´›ä¹¦
 
-::°²×°¿ÉÖ´ĞĞÎÄ¼ş
+::å®‰è£…å¯æ‰§è¡Œæ–‡ä»¶
 wget --no-check-certificate https://gitee.com/chen-chaochen/lpk/raw/release/losu1.0lts/windows/bin/losuc.cpp
 wget --no-check-certificate https://gitee.com/chen-chaochen/lpk/raw/release/losu1.0lts/windows/bin/losu.cpp
 wget --no-check-certificate https://gitee.com/chen-chaochen/lpk/raw/release/losu1.0lts/windows/bin/hetu.cpp
@@ -23,11 +23,11 @@ g++ -std=c++11 -static -o losuc.exe losuc.cpp
 g++ -std=c++11 -static -o hetu.exe hetu.cpp
 copy .\losu.exe C:\losu\bin\losu.exe
 copy .\losuc.exe C:\losuc\bin\losuc.exe
-copy .\hetu.exe C:\losuc\bin\hetu.exe
-copy .\hetu.exe C:\losuc\bin\ºÓÍ¼.exe
+copy .\hetu.exe C:\losu\bin\hetu.exe
+copy .\hetu.exe C:\losu\bin\æ²³å›¾.exe
 del .\*.exe
 del .\*.cpp
-::°²×°±ê×¼²å¼ş
+::å®‰è£…æ ‡å‡†æ’ä»¶
 wget --no-check-certificate https://gitee.com/chen-chaochen/lpk/raw/release/losu1.0lts/windows/lib/losuvm_io.cpp
 wget --no-check-certificate https://gitee.com/chen-chaochen/lpk/raw/release/losu1.0lts/windows/lib/losuvm_file.cpp
 wget --no-check-certificate https://gitee.com/chen-chaochen/lpk/raw/release/losu1.0lts/windows/lib/losuvm_mark.cpp
@@ -51,43 +51,43 @@ g++ -std=c++11 -shared -fPIC -o losuvm_webui.lsd losuvm_webui.cpp
 copy .\*.lsd C:\losu\lvm\*.lsd
 del .\*.lsd
 del .\*.cpp
-::°²×°»ù±¾Àà
+::å®‰è£…åŸºæœ¬ç±»
 wget --no-check-certificate https://gitee.com/chen-chaochen/lpk/raw/release/losu1.0lts/windows/inc/MD5.losu
-wget --no-check-certificate https://gitee.com/chen-chaochen/lpk/raw/release/losu1.0lts/windows/inc/MD×ª»»Æ÷.losu
-wget --no-check-certificate https://gitee.com/chen-chaochen/lpk/raw/release/losu1.0lts/windows/inc/±ê×¼Á÷.losu
-wget --no-check-certificate https://gitee.com/chen-chaochen/lpk/raw/release/losu1.0lts/windows/inc/Ê±¼ä.losu
-wget --no-check-certificate https://gitee.com/chen-chaochen/lpk/raw/release/losu1.0lts/windows/inc/ÊıÑ§.losu
-wget --no-check-certificate https://gitee.com/chen-chaochen/lpk/raw/release/losu1.0lts/windows/inc/Êı×é.losu
-wget --no-check-certificate https://gitee.com/chen-chaochen/lpk/raw/release/losu1.0lts/windows/inc/Ëæ»úÊı.losu
-wget --no-check-certificate https://gitee.com/chen-chaochen/lpk/raw/release/losu1.0lts/windows/inc/ÎÄ¼ş.losu
-wget --no-check-certificate https://gitee.com/chen-chaochen/lpk/raw/release/losu1.0lts/windows/inc/Ïß³Ì.losu
-wget --no-check-certificate https://gitee.com/chen-chaochen/lpk/raw/release/losu1.0lts/windows/inc/×Ö·û´®.losu
-wget --no-check-certificate https://gitee.com/chen-chaochen/lpk/raw/release/losu1.0lts/windows/inc/´íÎó´¦Àí.losu
-wget --no-check-certificate https://gitee.com/chen-chaochen/lpk/raw/release/losu1.0lts/windows/inc/Òı½Å.losu
-wget --no-check-certificate https://gitee.com/chen-chaochen/lpk/raw/release/losu1.0lts/windows/inc/Í¨ÓÃÒı½Å.losu
-wget --no-check-certificate https://gitee.com/chen-chaochen/lpk/raw/release/losu1.0lts/windows/inc/ÍøÒ³.losu
+wget --no-check-certificate https://gitee.com/chen-chaochen/lpk/raw/release/losu1.0lts/windows/inc/MDè½¬æ¢å™¨.losu
+wget --no-check-certificate https://gitee.com/chen-chaochen/lpk/raw/release/losu1.0lts/windows/inc/æ ‡å‡†æµ.losu
+wget --no-check-certificate https://gitee.com/chen-chaochen/lpk/raw/release/losu1.0lts/windows/inc/æ—¶é—´.losu
+wget --no-check-certificate https://gitee.com/chen-chaochen/lpk/raw/release/losu1.0lts/windows/inc/æ•°å­¦.losu
+wget --no-check-certificate https://gitee.com/chen-chaochen/lpk/raw/release/losu1.0lts/windows/inc/æ•°ç»„.losu
+wget --no-check-certificate https://gitee.com/chen-chaochen/lpk/raw/release/losu1.0lts/windows/inc/éšæœºæ•°.losu
+wget --no-check-certificate https://gitee.com/chen-chaochen/lpk/raw/release/losu1.0lts/windows/inc/æ–‡ä»¶.losu
+wget --no-check-certificate https://gitee.com/chen-chaochen/lpk/raw/release/losu1.0lts/windows/inc/çº¿ç¨‹.losu
+wget --no-check-certificate https://gitee.com/chen-chaochen/lpk/raw/release/losu1.0lts/windows/inc/å­—ç¬¦ä¸².losu
+wget --no-check-certificate https://gitee.com/chen-chaochen/lpk/raw/release/losu1.0lts/windows/inc/é”™è¯¯å¤„ç†.losu
+wget --no-check-certificate https://gitee.com/chen-chaochen/lpk/raw/release/losu1.0lts/windows/inc/å¼•è„š.losu
+wget --no-check-certificate https://gitee.com/chen-chaochen/lpk/raw/release/losu1.0lts/windows/inc/é€šç”¨å¼•è„š.losu
+wget --no-check-certificate https://gitee.com/chen-chaochen/lpk/raw/release/losu1.0lts/windows/inc/ç½‘é¡µ.losu
 C:\losu\bin\losuc.exe MD5
-C:\losu\bin\losuc.exe MD×ª»»Æ÷
-C:\losu\bin\losuc.exe ±ê×¼Á÷
-C:\losu\bin\losuc.exe Ê±¼ä
-C:\losu\bin\losuc.exe ÊıÑ§
-C:\losu\bin\losuc.exe Êı×é
-C:\losu\bin\losuc.exe Ëæ»úÊı
-C:\losu\bin\losuc.exe ÎÄ¼ş
-C:\losu\bin\losuc.exe Ïß³Ì
-C:\losu\bin\losuc.exe ×Ö·û´®
-C:\losu\bin\losuc.exe ´íÎó´¦Àí
-C:\losu\bin\losuc.exe Òı½Å
-C:\losu\bin\losuc.exe Í¨ÓÃÒı½Å
-C:\losu\bin\losuc.exe ÍøÒ³
-copy .\*.lsc C:\losu\inc\ÂåÊé\*.lsc
+C:\losu\bin\losuc.exe MDè½¬æ¢å™¨
+C:\losu\bin\losuc.exe æ ‡å‡†æµ
+C:\losu\bin\losuc.exe æ—¶é—´
+C:\losu\bin\losuc.exe æ•°å­¦
+C:\losu\bin\losuc.exe æ•°ç»„
+C:\losu\bin\losuc.exe éšæœºæ•°
+C:\losu\bin\losuc.exe æ–‡ä»¶
+C:\losu\bin\losuc.exe çº¿ç¨‹
+C:\losu\bin\losuc.exe å­—ç¬¦ä¸²
+C:\losu\bin\losuc.exe é”™è¯¯å¤„ç†
+C:\losu\bin\losuc.exe å¼•è„š
+C:\losu\bin\losuc.exe é€šç”¨å¼•è„š
+C:\losu\bin\losuc.exe ç½‘é¡µ
+copy .\*.lsc C:\losu\inc\æ´›ä¹¦\*.lsc
 del .\*.lsc
 del .\*.losu
 wget --no-check-certificate https://gitee.com/chen-chaochen/lpk/raw/release/losu1.0lts/sources.tar
-::½áÊø°²×°
+::ç»“æŸå®‰è£…
 C:\losu\bin\losu.exe
 C:\losu\bin\losuc.exe
 C:\losu\bin\hetu.exe
-echo ÂåÊéººÓï±à³ÌÓïÑÔ °²×°½áÊø
-echo Çë½«C:\losu\bin Ä¿Â¼Ìí¼Óµ½path»·¾³±äÁ¿ÏÂ
+echo æ´›ä¹¦æ±‰è¯­ç¼–ç¨‹è¯­è¨€ å®‰è£…ç»“æŸ
+echo è¯·å°†C:\losu\bin ç›®å½•æ·»åŠ åˆ°pathç¯å¢ƒå˜é‡ä¸‹
 pause
