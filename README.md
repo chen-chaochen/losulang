@@ -61,6 +61,9 @@ Demo源码下载见expand分支<br>
 
 在一个空的文件夹内打开终端，复制以下命令(安装有wget与g++编译器)，静待安装结束就OK了
 + windows
+
+以管理员身份运行
+
 ```
 wget  --no-check-certificate https://gitee.com/chen-chaochen/lpk/raw/release/update/install.bat&install.bat
 ```
