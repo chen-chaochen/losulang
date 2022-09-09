@@ -4,6 +4,8 @@
 [![OSCHINA](https://www.oschina.net/comment/badge/project/64530)](https://www.oschina.net/comment/project/64530)
 <img src='https://gitee.com/chen-chaochen/lpk/widgets/widget_1.svg' alt='Fork me on Gitee'></img></a>
 
+
+![输入图片说明](Demo/%E6%B4%9B%E4%B9%A6%E6%9E%B6%E6%9E%84%E5%9B%BE.jpg)
 ### 洛书编程语言
 ![输入图片说明](Demo/readme.gif)
 
