@@ -135,6 +135,8 @@ master分支下的源码仅作预览用途，各发行版源码见release分支<
 
 #### [物联网/嵌入式](https://gitee.com/chen-chaochen/lpk/tree/doc/%E5%B5%8C%E5%85%A5%E5%BC%8F)
 
+![输入图片说明](Demo/c675d210d00db442f2de410e5a3e37643b501bca.gif)
+
 [[洛书物联网架构]](https://gitee.com/chen-chaochen/lpk/blob/expand/%E7%89%A9%E8%81%94%E7%BD%91/readme.md)
 
 [[联网报警器]](https://www.douyin.com/user/MS4wLjABAAAAbwjbvNpvRPNnlWf2iHkGvg_dqhVuMdLz4-csIo8ubS0?modal_id=7133415852505976095)<br>
