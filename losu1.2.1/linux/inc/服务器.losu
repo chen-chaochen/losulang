@@ -1,0 +1,20 @@
++类 服务器
+    +方法 用(端口)端口启动服务
+        +指令
+    
+            add [此方法],端口 lvm httpd ls_httpd_start
+        ;
+    ;
+    +方法 设置(文件名)文件为(文件类型)类型
+        +指令
+    
+            add [此方法],文件类型 add [此方法],文件名 lvm httpd ls_httpd_addconf
+        ;
+    ;
+    +方法 结束服务()
+        +指令
+    
+            lvm httpd ls_httpd_end
+        ;
+    ;
+;

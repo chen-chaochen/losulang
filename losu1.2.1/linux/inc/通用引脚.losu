@@ -1,0 +1,46 @@
++类 通用引脚
+
+    +方法 加载(编号)
+    
+        +指令
+        
+            add [此类],加载,编号 lvm gpio ls_gpio_export
+        ;
+        +回收 编号
+    ;
+    +方法 模式(编号,模式)
+    
+        +指令
+        
+            
+            add [此类],模式,模式 add [此类],模式,编号 lvm gpio ls_gpio_model
+        ;
+        +回收 编号
+        +回收 模式
+    ;
+    +方法 读取(编号)
+    
+        +指令
+        
+            add [此类],读取,编号 lvm gpio ls_gpio_read mov [此类],读取
+        ;
+        +回收 编号
+    ;
+    +方法 写入(编号,状态)
+    
+        +指令
+        
+            add [此类],写入,状态 add [此类],写入,编号 lvm gpio ls_gpio_value
+        ;
+        +回收 编号
+        +回收 状态
+    ;
+    +方法 卸载(编号)
+    
+        +指令
+        
+            add [此类],卸载,编号 lvm gpio ls_gpio_unexport
+        ;
+        +回收 编号
+    ;
+;
