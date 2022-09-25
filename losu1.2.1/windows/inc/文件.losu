@@ -1,0 +1,54 @@
++类 文件
+
+    +属性 编号
+    +属性 模式
+    +属性 文件名
+    //读到文件结尾返回1，否则返回0
+    +属性 结尾
+    +方法 以(模式)模式打开文件(文件名)
+    
+        // -1 读取  0 新建 1 追加
+        <[此类],模式> = 模式 
+        <[此类],文件名> = 文件名 
+        +指令
+        
+            lvm file losuvm_file_freefile mov [此类],编号
+            add [此方法],模式 add [此类],编号 add [此方法],文件名 lvm file losuvm_file_open
+        ;
+        +回收 文件名
+        +回收 模式 
+    ;
+    +方法 写入(内容)
+    
+        +指令
+        
+            add [此类],写入,内容 add [此类],编号 lvm file losuvm_file_print
+        ;
+        +回收 内容
+    ;
+    +方法 读取()
+    
+        //读取直到遇到空格
+        +指令
+        
+            add [此类],编号 lvm file losuvm_file_input mov [此类],读取
+            add [此类],编号 lvm file losuvm_file_eof mov [此类],结尾
+        ;
+    ;
+    +方法 读取一行()
+    
+        +指令
+        
+            add [此类],编号 lvm file losuvm_file_lineinput mov [此类],读取一行
+            add [此类],编号 lvm file losuvm_file_eof mov [此类],结尾
+        ;
+    ;
+    +方法 关闭()
+    
+        +指令
+        
+            add [此类],编号 lvm file losuvm_file_close
+            clear [此类],文件名 clear [此类],编号 clear [此类],模式 clear [此类],结尾 clear [此类],读取 clear [此类],读取一行
+        ;
+    ;
+;
